@@ -1,0 +1,79 @@
+// state of element
+.is-shown {
+  display: block;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.is-mega-shown {
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  top: unset !important;
+  left: unset !important;
+}
+// margin
+$mb-8: px(80);
+
+// text align
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// color text
+.c-red {
+  color: $danger-color;
+}
+
+.c-blue {
+  color: $primary-color;
+}
+
+.c-pink {
+  color: $dark-pink;
+}
+
+.c-green {
+  color: $success-color;
+}
+
+.c-purple {
+  color: $dark-purple;
+}
+
+.c-info {
+  color: $info-color;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mb-3 {
+  margin-bottom: px(30);
+}
+
+.mb-12 {
+  margin-bottom: px(120);
+}

@@ -1,0 +1,57 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: $f-regular;
+  color: $text-gray;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.mesi-bold{
+  font-family: 'mesi-bold';
+}
+.mesi{
+  font-family: 'mesi';
+}
+.rokkitt-bold{
+  font-family: 'rokkitt-bold';
+}
+.rokkitt{
+  font-family: 'rokkitt';
+}
+
+
+
+@font-face {
+  font-family: 'mesi-bold';
+  src: url("../fonts/ElMessiriBold.ttf");
+}
+@font-face {  
+  font-family: 'mesi';
+  src: url("../fonts/ElMessiri-Regular.ttf");
+}
+@font-face {
+  font-family: 'rokkitt-bold';
+  src: url("../fonts/RokkittBold.ttf");
+}
+@font-face{
+  font-family: 'rokkitt';
+  src: url("../fonts/Rokkitt-Regular.ttf");
+}
