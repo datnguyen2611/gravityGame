@@ -117,6 +117,9 @@
       .nav-item {
         width: px(180);
         height: px(40);
+        @include ipad{
+            width: px(120);
+        }
         .nav-link {
           text-align: center;
           color: #d6be90;
@@ -130,7 +133,15 @@
           z-index: 0;
           @extend .mesi-bold;
           font-size: px(18);
-         
+         @include ipad{
+             width: px(120);
+            
+         }
+         p{
+          @include ipad{
+            font-size: px(14)!important;
+          }
+         }
         }
         .nav-link.active {
           position: relative;
@@ -154,6 +165,9 @@
             -webkit-text-fill-color: transparent;
             @extend .mesi-bold;
             font-size: px(18);
+            @include ipad{
+                font-size: px(14);
+            }
           }
         }
       }

@@ -74,3 +74,85 @@
     height: $size;
   }
 }
+
+@mixin screen2560 {
+  @media (max-width: 2560px) {
+      @content;
+  }
+}
+
+@mixin screen1440 {
+  @media (max-width: 1440px) {
+      @content;
+  }
+}
+
+@mixin screen1024 {
+  @media (max-width: 1024px) {
+      @content;
+  }
+}
+
+@mixin screen1280 {
+  @media (max-width: 1280px) {
+      @content;
+  }
+}
+@mixin screen1200 {
+  @media (max-width: 1200px) {
+      @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1025px) {
+      @content;
+  }
+}
+
+@mixin screen989 {
+  @media (max-width: 989px) {
+      @content;
+  }
+}
+
+@mixin screen992 {
+  @media (max-width: 992px) {
+      @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: 769px) {
+      @content;
+  }
+}
+
+@mixin ipad-mini {
+  @media (max-width: 700px) {
+      @content;
+  }
+}
+
+@mixin iphone {
+  @media (max-width: 600px) {
+      @content;
+  }
+}
+@mixin iphone-mini {
+  @media (max-width: 375px) {
+      @content;
+  }
+}
+
+@mixin iphoneX {
+  @media (max-width: 599px) and (min-width: 320px) {
+      @content;
+  }
+}
+@mixin big-sreen-1560 {
+  @media (max-width: 1560px) {
+      @content;
+  }
+}
+
