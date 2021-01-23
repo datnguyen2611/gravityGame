@@ -1,119 +1,226 @@
-.no-padding{
-    padding-left: 0!important;
-    padding-right: 0!important;
-  }
-
-body{
-    background-image: url('../../assets/images/background.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position:center;
-width: 100%;
-height: 100%;
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-.wrapper{
-
-p{
+.wrapper {
+  background-image: url("../../assets/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  p {
     font-size: 1rem;
     margin-bottom: 0;
-}
-.logo-header{
+  }
+  .logo-header {
     padding: px(24) 0;
+  }
+  .main {
+    .text_small_title {
+      font-size: px(15);
+      color: #ffd37e;
+      text-align: center;
+    }
+    .main_bet_number_header {
+      text-align: center;
+      margin-bottom: -1.6rem;
+    }
+    .main_bet_number {
+      border: 2px solid #393a45;
+      border-radius: 8px;
+      padding: px(50) px(8) px(21);
+    }
+    .bet_number_table {
+      // background: rgba(12, 12, 12, 0.25);
+      // box-shadow: inset 0px 0px 15px #000000;
 
-}
-.main{
-    .text_small_title{
-        font-size: px(15);
-        color: #FFD37E;
-        text-align: center;
-       
+      .item {
+        .number {
+          color: #ffd37e;
+          text-align: center;
+          margin-bottom: 0;
+          @extend .mesi-bold;
+        }
+        .percent,
+        .point {
+          color: #efbebe;
+          font-size: px(12);
+          @extend .rokkitt;
+          text-align: center;
+        }
+
+        background-image: url("/src/assets/images/bg_gray.png");
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: 100% 100%;
+        padding: 0.5rem 0;
+      }
     }
-    .main_bet_number_header{
-        text-align: center;
-        margin-bottom: -1.6rem;
+    .unified_list {
+      justify-content: space-between;
+      padding-bottom: px(25);
+      .unified_list_left,
+      .unified_list_right {
+        .item {
+          @extend .rokkitt;
+          text-transform: uppercase;
+          .title {
+            color: #d9aeae;
+            margin: auto;
+            p {
+              font-size: px(14);
+            }
+          }
+          .number {
+            color: #ffffff;
+            margin: auto;
+            padding-left: px(17);
+            p {
+              font-size: px(13);
+            }
+          }
+        }
+      }
     }
-    .main_bet_number{
+    .bet_address {
+      h2 {
+        font-size: px(14);
+        color: #ffd37e;
+        @extend .mesi-bold;
+      }
+      p {
+        font-size: px(13);
+        color: #d9aeae;
+        @extend .mesi;
+      }
+    }
+    .qr_code {
+      padding-top: px(21);
+      .qr_icon {
+        padding-right: px(10);
+      }
+      .qr_title {
+        margin: auto 0;
+        color: #d9aeae;
+        @extend .mesi;
+        font-size: px(13);
+      }
+    }
+  }
+
+  .main-right {
+    ul {
+      width: 100%;
+      justify-content: space-evenly;
+      .nav-item {
+        width: px(180);
+        height: px(40);
+        .nav-link {
+          text-align: center;
+          color: #d6be90;
+          background-image: url("/src/assets/images/background/backgound_title.svg");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: px(180);
+          height: px(40);
+          position: relative;
+          z-index: 0;
+          @extend .mesi-bold;
+          font-size: px(18);
+         
+        }
+        .nav-link.active {
+          position: relative;
+          
+          background-color: transparent;
+          &::after {
+            content: "";
+            box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+            -webkit-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+            -moz-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            top: 0;
+            z-index: 0;
+          }
+          p{
+            background: linear-gradient(to bottom,#FDF413 0% ,#FFC977 50%, #C09645 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @extend .mesi-bold;
+            font-size: px(18);
+          }
+        }
+      }
+    }
+    .list_main{
+        margin-bottom: -2.4rem;
+    }
+
+    .list_main_content{
         border: 2px solid #393a45;
         border-radius: 8px;
-        padding: px(50) px(8) px(21) px(8);
-       
-    }
-    .bet_number_table{
-      
-        // background: rgba(12, 12, 12, 0.25);
-        // box-shadow: inset 0px 0px 15px #000000;
-        
-        
+        padding: px(50) px(8) px(21);
+        background-color: rgba(0, 0, 0, .25);
         .item{
-            .number{
-               color: #FFD37E;
-               text-align: center;
-               margin-bottom: 0;
-               @extend .mesi-bold;
-            }
-            .percent,.point{
-                color: #EFBEBE;
-                font-size: px(12);
-                @extend .rokkitt;
-                text-align: center;
-            }
-
-            background-image: url("/src/assets/images/bg_gray.png");
-            width: 100%;
-            background-repeat: no-repeat;
-            height: 100%;
-            background-size: 100% 100%;
-            padding :.5rem 0;
-        }
-    }
-    .unified_list{
-        justify-content:space-between;
-        padding-bottom: px(25);
-        .unified_list_left,.unified_list_right{
-            .item{
-                @extend .rokkitt;
-                text-transform: uppercase;
-                .title{
-                    color: #D9AEAE;
-                    margin: auto;
-                    p{
+            @extend .rokkitt;
+            table {
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                 table-layout: fixed;
+                 height: fit-content;
+                 max-height: px(350);
+                 overflow-y: scroll;
+                tbody{
+                    td{
                         font-size: px(14);
+                        color: #ffffff;
+                        font-weight: 400;
+                    &:first-child,&:nth-child(2){
+                        color: #D9AEAE;
+                    }
+                    }
+                    td.result{
+                        display: inline-flex;
+                      width: 100%;
+                     justify-content: center;
+                        .image_status{
+                            margin: auto 0;
+                            padding-right: .5rem;
+                        }
+                        .text_status.win{
+                            color: #97C450;
+                        }
+                        .text_status.lose{
+                            color: #606060;
+                        }
                     }
                 }
-                .number{
-                    color: #ffffff;
-                    margin: auto;
-                    padding-left: px(17);
-                    p{
-                        font-size: px(13);
-                    }
-                }
-            }
+              }
+              
+              table caption {
+                font-size: 1.5em;
+                margin: .5em 0 .75em;
+              }
+              table th,
+              table td {
+                text-align: center;
+                padding: 0;
+              }
+              
+              table th {
+                font-size: px(16);
+                color: #FFD37E;
+                font-weight: 500;
+              }
         }
     }
-    .bet_address{
-        h2{
-            font-size: px(14);
-            color: #FFD37E;
-            @extend .mesi-bold;
-        }
-        p{
-                font-size: px(13);
-                color: #D9AEAE;
-                @extend .mesi;
-        }
-    }
-    .qr_code{
-        padding-top:px(21) ;
-        .qr_icon{
-            padding-right: px(10);
-        }
-        .qr_title{
-            margin: auto 0;
-            color: #D9AEAE;
-            @extend .mesi;
-            font-size: px(13);
-        }
-    }
-}
+  }
 }
