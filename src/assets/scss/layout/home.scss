@@ -53,7 +53,7 @@ body {
         .text_item{
           position: absolute;
           top: 45%;
-          left: 45%;
+          left: 47%;
           transform: translate(-50%,-50%);
         }
         .number {
@@ -251,11 +251,14 @@ body {
       .item {
         @extend .rokkitt;
         .icon_click{
-
+          display: none;
           position: absolute;
-          right: 5%;
-          top: 5%;
+          right: 0;
+          top: 0;
           padding:0;
+          @include ipad{
+            display: block;
+          }
       }
         table {
           border-collapse: collapse;
@@ -266,6 +269,9 @@ body {
           height: fit-content;
           max-height: px(350);
           overflow-y: scroll;
+          @include ipad{
+            border-collapse: unset;
+          }
 
           thead {
             @include ipad {
@@ -282,6 +288,7 @@ body {
 
           tbody {
             td {
+              animation-duration: 2s;
               font-size: px(14);
               color: #ffffff;
               font-weight: 400;
@@ -295,7 +302,7 @@ body {
                font-size: px(16);
                 text-align: left;
                 padding-left: 50%;
-                padding-bottom: px(9);
+                // padding-bottom: px(9);
                 &::before {
                   content: attr(data-label);
                    position: absolute;
@@ -304,6 +311,9 @@ body {
                   left: 10%;
                   color: #FFD37E;
                   font-family: "rokkitt";
+                }
+                &:not(:first-of-type){
+                  display: none;
                 }
               }
             }
@@ -314,6 +324,7 @@ body {
               justify-content: center;
               @include ipad{
                 justify-content: space-between;
+                display: none;
               }
               .image_status {
                 margin: auto 0;
@@ -332,11 +343,13 @@ body {
 
           tr {
             position: relative;
+           
             @include ipad {
               display: block;
-              padding: px(18) px(16);
+              padding: px(8) px(16);
               border: 2px solid #393a45;
               border-radius: 8px;
+              margin-bottom: px(8);
             }
             
           }
@@ -360,5 +373,11 @@ body {
         }
       }
     }
+  }
+}
+
+.activeCollap {
+  td{
+    display: block; 
   }
 }

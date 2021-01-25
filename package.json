@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/datnguyen2611/gravityGame/issues"
   },
-  "homepage": "https://github.com/datnguyen2611/gravityGame#readme"
+  "homepage": "https://github.com/datnguyen2611/gravityGame#readme",
+  "dependencies": {
+    "static-server": "^2.2.1"
+  }
 }
