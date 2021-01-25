@@ -27,14 +27,24 @@ $(document).ready(function () {
 
     $('.link_number_table').click(function(){
         $('.link_number_table').removeClass('active_number_bet');
+        $('.change_bg').removeClass('shadow_active');
         $('.change_bg').attr('src','./src/assets/images/background/background_gray.svg');
         $(this).addClass('active_number_bet');
        
         if($(this).hasClass('active_number_bet')){
             $(this).find('.change_bg').attr('src','./src/assets/images/background/background_active.svg');
+            $(this).find('.change_bg').addClass('shadow_active');
         }else{
             $(this).find('.change_bg').attr('src','./src/assets/images/background/background_gray.svg');
+            $('.change_bg').removeClass('shadow_active');
         }
     });
    
+
+    if($(' tbody').height() > 300){
+        $('tbody').css({'overflow-y':'scroll','height':'20rem'});
+    }else{
+        $('tbody').css({'overflow-y':'none','height':'fit-content'}); 
+        $('.scroll_bar_table').css('display','none');
+    }
 });

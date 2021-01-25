@@ -271,6 +271,9 @@ body {
           padding: 0;
           width: 100%;
           table-layout: fixed;
+          position: relative;
+          
+          
 
           @include ipad {
             border-collapse: unset;
@@ -290,28 +293,30 @@ body {
           }
 
           tbody {
-            height: fit-content;
-            max-height: px(50);
+            height: px(320);
             overflow-y: scroll;
             display: block;
             width: 100%;
-
+            position: relative;
+            @include ipad{
+              padding-right: .5rem;
+            }
             &::-webkit-scrollbar-track {
               // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-              background-color: #000000;
-              border: 2px solid ;
-              border-image: linear-gradient(to bottom, #7A7369, #7A6969) 1 stretch;
+              // border: 2px solid ;
+              // border-image: linear-gradient(to bottom, #7A7369, #7A6969) 1 stretch;
             }
 
             &::-webkit-scrollbar {
               width: 10px;
+              height: 10px;
             }
 
             &::-webkit-scrollbar-thumb {
-              // border-radius: 10px;
-              // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+              // position: relative;
+              // background-color: red;
              background-image: url('../../assets/images/scrollbar.png');
-             background-size: contain;
+             background-size: 100% 100%;
              background-repeat: no-repeat;
             }
 
@@ -367,6 +372,7 @@ body {
                 color: #606060;
               }
             }
+            
           }
 
           tr {
@@ -408,9 +414,10 @@ body {
     display: block;
   }
 }
-.active_number_bet{
-  width: 100%;
-  height: 100%;
+// .active_number_bet{
+ 
+// }
+.shadow_active{
   box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
             -webkit-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
             -moz-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
@@ -438,5 +445,37 @@ body {
   @include ipad{
     margin: px(16) 0;
     justify-content: center;
+  }
+}
+// .scrollbarTrack{
+//   position: absolute!important;
+//   right: 0;
+//   background-color: transparent;
+//   width: 6px!important;
+//   height: 100%;
+//   top: 0;
+//   border: 2px solid ;
+//   .scrollpane{
+//     background-color: red;
+//     width: 10px;
+//     position: absolute;
+//     left: -.2rem;
+//     height: 10px;
+//     display: block;
+//     top: 0;
+//   }
+// }
+.scroll_bar_table{
+  width: 5px ;
+  height: 66%;
+  display: block ;
+  position: absolute ;
+  right: 1.7rem;
+  top: 7rem;
+  background-color: #000000;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #7A7369, #7A6969) 1 stretch;
+  @include ipad{
+    right: 1.22rem;
   }
 }
