@@ -396,7 +396,7 @@ img {
 a {
   text-decoration: none; }
 
-.mesi-bold, .wrapper .main .bet_number_table .item .number, .wrapper .main .bet_address h2, .wrapper .main-right ul .nav-item .nav-link, .wrapper .main-right ul .nav-item .nav-link.active p {
+.mesi-bold, .wrapper .main .bet_number_table .item .number, .wrapper .main .bet_address h2, .wrapper .main-right ul .nav-item .nav-link, .wrapper .main-right ul .nav-item .nav-link.active p, .online_status {
   font-family: 'mesi-bold'; }
 
 .mesi, .wrapper .main .bet_address p, .wrapper .main .qr_code .qr_title {
@@ -709,3 +709,22 @@ body {
   box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
   -webkit-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
   -moz-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73); }
+
+.online_status {
+  margin: 0.75rem 0 7.375rem 0;
+  padding: 0.5625rem 1.3125rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .online_status .online-text {
+    font-size: 1.125rem;
+    padding-right: 4.4375rem; }
+    .online_status .online-text span {
+      color: #FFD37E; }
+  .online_status .total_bet_text {
+    font-size: 1.125rem; }
+    .online_status .total_bet_text span {
+      color: #FFD37E; }
+  @media (max-width: 769px) {
+    .online_status {
+      margin: 1rem 0;
+      justify-content: center; } }

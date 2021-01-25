@@ -138,6 +138,10 @@ body {
         font-size: px(13);
       }
     }
+
+    .online_status{
+
+    }
   }
 
   .main-right {
@@ -410,4 +414,29 @@ body {
   box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
             -webkit-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
             -moz-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+}
+.online_status{
+  margin: px(12) 0 px(118) 0;
+  padding: px(9) px(21) ;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, .5);
+  @extend .mesi-bold;
+  .online-text{
+    font-size: px(18);
+    padding-right: px(71);
+    span{
+      color: #FFD37E;
+    }
+  }
+  .total_bet_text{
+    font-size: px(18);
+    span{
+      color: #FFD37E;
+    }
+  }
+
+  @include ipad{
+    margin: px(16) 0;
+    justify-content: center;
+  }
 }
