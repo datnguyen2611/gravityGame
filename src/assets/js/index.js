@@ -42,7 +42,7 @@ $(document).ready(function () {
    
 
     if($(' tbody').height() > 300){
-        $('tbody').css({'overflow-y':'scroll','height':'20rem'});
+        $('tbody').css({'overflow-y':'scroll','height':'21rem'});
     }else{
         $('tbody').css({'overflow-y':'none','height':'fit-content'}); 
         $('.scroll_bar_table').css('display','none');
