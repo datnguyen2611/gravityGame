@@ -492,6 +492,10 @@ body {
       .wrapper .main .unified_list .unified_list_left .item .title p,
       .wrapper .main .unified_list .unified_list_right .item .title p {
         font-size: 0.875rem; }
+        @media (max-width: 1200px) {
+          .wrapper .main .unified_list .unified_list_left .item .title p,
+          .wrapper .main .unified_list .unified_list_right .item .title p {
+            font-size: 0.75rem; } }
     .wrapper .main .unified_list .unified_list_left .item .number,
     .wrapper .main .unified_list .unified_list_right .item .number {
       color: #ffffff;
@@ -500,6 +504,10 @@ body {
       .wrapper .main .unified_list .unified_list_left .item .number p,
       .wrapper .main .unified_list .unified_list_right .item .number p {
         font-size: 0.8125rem; }
+        @media (max-width: 1200px) {
+          .wrapper .main .unified_list .unified_list_left .item .number p,
+          .wrapper .main .unified_list .unified_list_right .item .number p {
+            font-size: 0.75rem; } }
 
 .wrapper .main .bet_address h2 {
   font-size: 0.875rem;
