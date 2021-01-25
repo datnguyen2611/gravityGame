@@ -13,7 +13,6 @@ body {
 }
 
 .wrapper {
-
   p {
     font-size: 1rem;
     margin-bottom: 0;
@@ -46,15 +45,14 @@ body {
       // box-shadow: inset 0px 0px 15px #000000;
 
       .item {
-
-        .images_item{
+        .images_item {
           position: relative;
         }
-        .text_item{
+        .text_item {
           position: absolute;
           top: 45%;
           left: 47%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
         }
         .number {
           color: #ffd37e;
@@ -143,8 +141,8 @@ body {
   }
 
   .main-right {
-    @include screen992{
-      margin-top: 1rem ;
+    @include screen992 {
+      margin-top: 1rem;
     }
     ul {
       width: 100%;
@@ -180,13 +178,11 @@ body {
 
           @include ipad {
             width: px(136);
-
           }
 
           //  @include screen-500{
           //    width: 6.5rem;
           //  }
-
 
           p {
             @include ipad {
@@ -211,13 +207,18 @@ body {
             left: 5%;
             top: 0;
             z-index: 0;
-            @include ipad{
+            @include ipad {
               height: 78%;
             }
           }
 
           p {
-            background: linear-gradient(to bottom, #FDF413 0%, #FFC977 50%, #C09645 100%);
+            background: linear-gradient(
+              to bottom,
+              #fdf413 0%,
+              #ffc977 50%,
+              #c09645 100%
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             @extend .mesi-bold;
@@ -233,7 +234,7 @@ body {
 
     .list_main {
       margin-bottom: -2.4rem;
-      @include ipad{
+      @include ipad {
         margin-bottom: 0;
         margin-top: 1rem;
       }
@@ -243,33 +244,31 @@ body {
       border: 2px solid #393a45;
       border-radius: 8px;
       padding: px(50) px(8) px(21);
-      background-color: rgba(0, 0, 0, .25);
-      @include ipad{
+      background-color: rgba(0, 0, 0, 0.25);
+      @include ipad {
         border: none;
         padding: 0;
       }
       .item {
         @extend .rokkitt;
-        .icon_click{
+        .icon_click {
           display: none;
           position: absolute;
           right: 0;
           top: 0;
-          padding:0;
-          @include ipad{
+          padding: 0;
+          @include ipad {
             display: block;
           }
-      }
+        }
         table {
           border-collapse: collapse;
           margin: 0;
           padding: 0;
           width: 100%;
           table-layout: fixed;
-          height: fit-content;
-          max-height: px(350);
-          overflow-y: scroll;
-          @include ipad{
+
+          @include ipad {
             border-collapse: unset;
           }
 
@@ -287,6 +286,31 @@ body {
           }
 
           tbody {
+            height: fit-content;
+            max-height: px(50);
+            overflow-y: scroll;
+            display: block;
+            width: 100%;
+
+            &::-webkit-scrollbar-track {
+              // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+              background-color: #000000;
+              border: 2px solid ;
+              border-image: linear-gradient(to bottom, #7A7369, #7A6969) 1 stretch;
+            }
+
+            &::-webkit-scrollbar {
+              width: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              // border-radius: 10px;
+              // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+             background-image: url('../../assets/images/scrollbar.png');
+             background-size: contain;
+             background-repeat: no-repeat;
+            }
+
             td {
               animation-duration: 2s;
               font-size: px(14);
@@ -295,24 +319,24 @@ body {
               position: relative;
               &:first-child,
               &:nth-child(2) {
-                color: #D9AEAE;
+                color: #d9aeae;
               }
-              @include ipad{
+              @include ipad {
                 display: block;
-               font-size: px(16);
+                font-size: px(16);
                 text-align: left;
                 padding-left: 50%;
                 // padding-bottom: px(9);
                 &::before {
                   content: attr(data-label);
-                   position: absolute;
-                    font-weight: bold;
+                  position: absolute;
+                  font-weight: bold;
                   font-size: px(14);
                   left: 10%;
-                  color: #FFD37E;
+                  color: #ffd37e;
                   font-family: "rokkitt";
                 }
-                &:not(:first-of-type){
+                &:not(:first-of-type) {
                   display: none;
                 }
               }
@@ -322,17 +346,17 @@ body {
               display: inline-flex;
               width: 100%;
               justify-content: center;
-              @include ipad{
+              @include ipad {
                 justify-content: space-between;
                 display: none;
               }
               .image_status {
                 margin: auto 0;
-                padding-right: .5rem;
+                padding-right: 0.5rem;
               }
 
               .text_status.win {
-                color: #97C450;
+                color: #97c450;
               }
 
               .text_status.lose {
@@ -343,7 +367,8 @@ body {
 
           tr {
             position: relative;
-           
+            display: table;
+            width: 100%;
             @include ipad {
               display: block;
               padding: px(8) px(16);
@@ -351,25 +376,23 @@ body {
               border-radius: 8px;
               margin-bottom: px(8);
             }
-            
           }
           caption {
             font-size: 1.5em;
-            margin: .5em 0 .75em;
+            margin: 0.5em 0 0.75em;
           }
-  
+
           th,
           td {
             text-align: center;
             padding: 0;
           }
-  
+
           th {
             font-size: px(16);
-            color: #FFD37E;
+            color: #ffd37e;
             font-weight: 500;
           }
-          
         }
       }
     }
@@ -377,7 +400,14 @@ body {
 }
 
 .activeCollap {
-  td{
-    display: block; 
+  td {
+    display: block;
   }
+}
+.active_number_bet{
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+            -webkit-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+            -moz-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
 }
