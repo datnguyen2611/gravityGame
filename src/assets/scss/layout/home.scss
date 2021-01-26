@@ -471,17 +471,90 @@ body {
 //     top: 0;
 //   }
 // }
-.scroll_bar_table{
-  width: 5px ;
-  height: 66%;
-  display: block ;
-  position: absolute ;
-  right: 1.7rem;
-  top: 7rem;
-  background-color: #000000;
-  border: 2px solid;
-  border-image: linear-gradient(to bottom, #7A7369, #7A6969) 1 stretch;
+// .scroll_bar_table{
+//   width: 5px ;
+//   height: 66%;
+//   display: block ;
+//   position: absolute ;
+//   right: 1.7rem;
+//   top: 7rem;
+//   background-color: #000000;
+//   border: 2px solid;
+//   border-image: linear-gradient(to bottom, #7A7369, #7A6969) 1 stretch;
+//   @include ipad{
+//     right: 1.22rem;
+//   }
+// }
+
+.input_submit{
+  margin: auto;
+.number_input{
+  margin: auto;
+  input{
+  background-color: transparent;
+  color: #ffffff;
+  border-image: linear-gradient(to bottom, #7A7369 0%,#EAC48B 50% , #7A6969 100%) 1 stretch;
+  padding-left: .5rem;
+  &:focus{
+    outline: none;
+    // border: none;
+  }
+
   @include ipad{
-    right: 1.22rem;
+    width: 80%;
+    text-align: center;
+  }
+  }
+}
+  .submit{
+    // position: relative;
+    // &::after{
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 0;
+    //   width: 50%;
+    //   height: 50%;
+    //   top: 50%;
+    //   left: 50%;
+    //   box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+    // -webkit-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+    // -moz-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
+    // }
+    img{
+      width: 80%;
+      margin: auto;
+      padding-top: .5rem;
+      position: relative;
+      z-index: 1;
+      @include ipad{
+        width: 100%;
+      }
+      
+    }a{
+      width: 100%;
+      height: 100%;
+      &:focus{
+        outline: none;
+        border: none;
+      }
+    }
+    
+  }
+}
+.text_address_and_balance{
+  padding-top: px(17);
+  justify-content: space-around;
+  .your_adress,.balance{
+    p{
+      @extend .mesi-bold;
+      font-size: px(13);
+      &:first-child{
+        color: #FFD37E;
+        margin-bottom: px(10);
+      }
+      &:nth-child(2){
+        color: #EFBEBE;
+      }
+    }
   }
 }

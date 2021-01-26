@@ -45,6 +45,6 @@ $(document).ready(function () {
         $('tbody').css({'overflow-y':'scroll','height':'21rem'});
     }else{
         $('tbody').css({'overflow-y':'none','height':'fit-content'}); 
-        $('.scroll_bar_table').css('display','none');
+        // $('.scroll_bar_table').css('display','none');
     }
 });

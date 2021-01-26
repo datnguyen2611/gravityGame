@@ -396,7 +396,7 @@ img {
 a {
   text-decoration: none; }
 
-.mesi-bold, .wrapper .main .bet_number_table .item .number, .wrapper .main .bet_address h2, .wrapper .main-right ul .nav-item .nav-link, .wrapper .main-right ul .nav-item .nav-link.active p, .online_status {
+.mesi-bold, .wrapper .main .bet_number_table .item .number, .wrapper .main .bet_address h2, .wrapper .main-right ul .nav-item .nav-link, .wrapper .main-right ul .nav-item .nav-link.active p, .online_status, .text_address_and_balance .your_adress p, .text_address_and_balance .balance p {
   font-family: 'mesi-bold'; }
 
 .mesi, .wrapper .main .bet_address p, .wrapper .main .qr_code .qr_title {
@@ -736,16 +736,44 @@ body {
       margin: 1rem 0;
       justify-content: center; } }
 
-.scroll_bar_table {
-  width: 5px;
-  height: 66%;
-  display: block;
-  position: absolute;
-  right: 1.7rem;
-  top: 7rem;
-  background-color: #000000;
-  border: 2px solid;
-  border-image: linear-gradient(to bottom, #7A7369, #7A6969) 1 stretch; }
-  @media (max-width: 769px) {
-    .scroll_bar_table {
-      right: 1.22rem; } }
+.input_submit {
+  margin: auto; }
+  .input_submit .number_input {
+    margin: auto; }
+    .input_submit .number_input input {
+      background-color: transparent;
+      color: #ffffff;
+      border-image: linear-gradient(to bottom, #7A7369 0%, #EAC48B 50%, #7A6969 100%) 1 stretch;
+      padding-left: .5rem; }
+      .input_submit .number_input input:focus {
+        outline: none; }
+      @media (max-width: 769px) {
+        .input_submit .number_input input {
+          width: 80%;
+          text-align: center; } }
+  .input_submit .submit img {
+    width: 80%;
+    margin: auto;
+    padding-top: .5rem;
+    position: relative;
+    z-index: 1; }
+    @media (max-width: 769px) {
+      .input_submit .submit img {
+        width: 100%; } }
+  .input_submit .submit a {
+    width: 100%;
+    height: 100%; }
+    .input_submit .submit a:focus {
+      outline: none;
+      border: none; }
+
+.text_address_and_balance {
+  padding-top: 1.0625rem;
+  justify-content: space-around; }
+  .text_address_and_balance .your_adress p, .text_address_and_balance .balance p {
+    font-size: 0.8125rem; }
+    .text_address_and_balance .your_adress p:first-child, .text_address_and_balance .balance p:first-child {
+      color: #FFD37E;
+      margin-bottom: 0.625rem; }
+    .text_address_and_balance .your_adress p:nth-child(2), .text_address_and_balance .balance p:nth-child(2) {
+      color: #EFBEBE; }
