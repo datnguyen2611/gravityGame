@@ -47,4 +47,17 @@ $(document).ready(function () {
         $('tbody').css({'overflow-y':'none','height':'fit-content'}); 
         // $('.scroll_bar_table').css('display','none');
     }
+
+    // 
+
+    if($('.change_img').attr('data-content') == 'lose'){
+        console.log(this)
+        $('.change_img').attr('src','./src/assets/images/lose.png');
+    }else if($('.change_img').attr('data-content') == 'win'){
+        $('.change_img').attr('src','./src/assets/images/win.png');
+    }
+    $('.popup_status').click(function(){
+        $(this).fadeOut('slow');
+    });
+
 });
