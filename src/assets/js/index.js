@@ -7,9 +7,9 @@ $(document).ready(function () {
             $(this).toggleClass('activeCollap');
             $(this).each(function () {
                 if ($(this).hasClass('activeCollap')) {
-                    $(this).children().slideDown('slow', function () {
-                        $(this).css("display", "block");
-                    });
+                    // $(this).children().slideDown('slow', function () {
+                        $(this).children().css("display", "block");
+                    // });
                     $(this).find(".icon_click").attr("src", "./src/assets/images/icon/up_icon.svg");
                         flag = true;
                 } else {
@@ -41,8 +41,8 @@ $(document).ready(function () {
     });
    
 
-    if($(' tbody').height() > 300){
-        $('tbody').css({'overflow-y':'scroll','height':'21rem'});
+    if($(' tbody').height() > 400){
+        $('tbody').css({'overflow-y':'scroll','height':'fit-content','max-height':'25rem'});
     }else{
         $('tbody').css({'overflow-y':'none','height':'fit-content'}); 
         // $('.scroll_bar_table').css('display','none');

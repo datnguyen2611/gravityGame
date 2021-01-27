@@ -650,7 +650,7 @@ body {
         position: absolute;
         width: 1px; } }
     .wrapper .main-right .list_main_content .item table tbody {
-      height: 20rem;
+      height: fit-content;
       overflow-y: scroll;
       display: block;
       width: 100%;

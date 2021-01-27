@@ -319,7 +319,7 @@ body {
           }
 
           tbody {
-            height: px(320);
+            height: fit-content;
             overflow-y: scroll;
             display: block;
             width: 100%;
