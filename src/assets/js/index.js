@@ -55,6 +55,9 @@ $(document).ready(function () {
         $('.change_img').attr('src','./src/assets/images/lose.png');
     }else if($('.change_img').attr('data-content') == 'win'){
         $('.change_img').attr('src','./src/assets/images/win.png');
+    }else if($('.change_img').attr('data-content') == 'waiting'){
+        
+        $('.change_img').attr('src','./src/assets/images/loading.gif');
     }
     $('.popup_status').click(function(){
         $(this).fadeOut('slow');

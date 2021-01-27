@@ -3,7 +3,7 @@
   padding-right: 0 !important;
 }
 .popup_status{
-    display: none;
+    // display: none;
   width: 100%;
   height: 100%;
   .change_img{
@@ -12,6 +12,7 @@
     left: 50%;
     z-index: 3;
     transform: translate(-50%,-50%);
+    width: 20%;
   }
   &::before{
     content: "";
