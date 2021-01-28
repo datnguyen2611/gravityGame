@@ -66,6 +66,13 @@ body {
       // box-shadow: inset 0px 0px 15px #000000;
 
       .item {
+        button{
+          background-color: transparent;
+          border: none;
+          &:focus{
+            outline: none;
+          }
+        }
         .images_item {
           position: relative;
         }
