@@ -40,14 +40,6 @@ $(document).ready(function () {
     });
    
 
-    if($('tbody').height() > 400){
-        $('tbody').css({'overflow-y':'scroll','height':'fit-content','max-height':'25rem'});
-    }else{
-        $('tbody').css({'overflow-y':'none','height':'fit-content'}); 
-        // $('.scroll_bar_table').css('display','none');
-    }
-
-    // 
 
     if($('.change_img').attr('data-content') == 'lose'){
         console.log(this)

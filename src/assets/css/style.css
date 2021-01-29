@@ -659,6 +659,7 @@ body {
       .wrapper .main-right .list_main_content .item table tbody {
         height: fit-content;
         overflow-y: scroll;
+        max-height: 20rem;
         display: block;
         width: 100%;
         position: relative; }
