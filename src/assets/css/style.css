@@ -407,7 +407,7 @@ a {
 
 .rokkitt, .wrapper .main .bet_number_table .item .percent,
 .wrapper .main .bet_number_table .item .point, .wrapper .main .unified_list .unified_list_left .item,
-.wrapper .main .unified_list .unified_list_right .item, .wrapper .main-right .list_main_content .item {
+.wrapper .main .unified_list .unified_list_right .item, .wrapper .main-right .list_main_content .item, .contract_address p {
   font-family: 'rokkitt'; }
 
 @font-face {
@@ -478,31 +478,29 @@ body {
   border-radius: 8px;
   padding: 3.125rem 0.5rem 1.3125rem; }
 
-.wrapper .main .bet_number_table .item button {
-  background-color: transparent;
-  border: none; }
-  .wrapper .main .bet_number_table .item button:focus {
-    outline: none; }
-
-.wrapper .main .bet_number_table .item .images_item {
-  position: relative; }
-
-.wrapper .main .bet_number_table .item .text_item {
-  position: absolute;
-  top: 45%;
-  left: 47%;
-  transform: translate(-50%, -50%); }
-
-.wrapper .main .bet_number_table .item .number {
-  color: #ffd37e;
-  text-align: center;
-  margin-bottom: 0; }
-
-.wrapper .main .bet_number_table .item .percent,
-.wrapper .main .bet_number_table .item .point {
-  color: #efbebe;
-  font-size: 0.75rem;
+.wrapper .main .bet_number_table .item {
   text-align: center; }
+  .wrapper .main .bet_number_table .item button {
+    background-color: transparent;
+    border: none; }
+    .wrapper .main .bet_number_table .item button:focus {
+      outline: none; }
+  .wrapper .main .bet_number_table .item .images_item {
+    position: relative; }
+  .wrapper .main .bet_number_table .item .text_item {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    transform: translate(-50%, -50%); }
+  .wrapper .main .bet_number_table .item .number {
+    color: #ffd37e;
+    text-align: center;
+    margin-bottom: 0; }
+  .wrapper .main .bet_number_table .item .percent,
+  .wrapper .main .bet_number_table .item .point {
+    color: #efbebe;
+    font-size: 0.75rem;
+    text-align: center; }
 
 .wrapper .main .unified_list {
   justify-content: space-between;
@@ -559,15 +557,15 @@ body {
   .wrapper .main-right ul {
     width: 100%;
     justify-content: space-evenly; }
+    @media (max-width: 700px) {
+      .wrapper .main-right ul {
+        justify-content: space-between; } }
     .wrapper .main-right ul .nav-item {
       width: 11.25rem;
       height: 2.5rem; }
       @media (max-width: 769px) {
         .wrapper .main-right ul .nav-item {
-          width: 7.5rem; } }
-      @media (max-width: 769px) {
-        .wrapper .main-right ul .nav-item:last-child {
-          display: none; } }
+          width: 6.5rem; } }
       .wrapper .main-right ul .nav-item .nav-link {
         text-align: center;
         color: #d6be90;
@@ -582,10 +580,12 @@ body {
         font-size: 1.125rem; }
         @media (max-width: 769px) {
           .wrapper .main-right ul .nav-item .nav-link {
-            width: 8.5rem; } }
+            width: 6.5rem;
+            padding: .5rem 0; } }
         @media (max-width: 769px) {
           .wrapper .main-right ul .nav-item .nav-link p {
-            font-size: 0.875rem !important; } }
+            font-size: 0.75rem !important;
+            margin-top: .3rem; } }
       .wrapper .main-right ul .nav-item .nav-link.active {
         position: relative;
         background-color: transparent; }
@@ -602,6 +602,7 @@ body {
           z-index: 0; }
           @media (max-width: 769px) {
             .wrapper .main-right ul .nav-item .nav-link.active::after {
+              display: none;
               height: 78%; } }
         .wrapper .main-right ul .nav-item .nav-link.active p {
           background: linear-gradient(to bottom, #fdf413 0%, #ffc977 50%, #c09645 100%);
@@ -764,26 +765,20 @@ body {
   margin: auto; }
   .input_submit .number_input {
     margin: auto; }
-    .input_submit .number_input input {
-      background-color: transparent;
-      color: #ffffff;
-      border-image: linear-gradient(to bottom, #7A7369 0%, #EAC48B 50%, #7A6969 100%) 1 stretch;
-      padding-left: .5rem; }
-      .input_submit .number_input input:focus {
-        outline: none; }
-      @media (max-width: 769px) {
-        .input_submit .number_input input {
-          width: 80%;
-          text-align: center; } }
+    .input_submit .number_input .bet_value {
+      background: #e9ecef17;
+      border: solid 3px #80808059;
+      border-radius: 5px;
+      color: #9ba4ad;
+      padding-left: 5px;
+      width: 100%;
+      margin-bottom: 10px; }
   .input_submit .submit img {
-    width: 80%;
+    width: 50%;
     margin: auto;
     padding-top: .5rem;
     position: relative;
     z-index: 1; }
-    @media (max-width: 769px) {
-      .input_submit .submit img {
-        width: 100%; } }
   .input_submit .submit a {
     width: 100%;
     height: 100%; }
@@ -801,3 +796,14 @@ body {
       margin-bottom: 0.625rem; }
     .text_address_and_balance .your_adress p:nth-child(2), .text_address_and_balance .balance p:nth-child(2) {
       color: #EFBEBE; }
+
+.contract_address {
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .contract_address p {
+    color: #d9aeae;
+    padding: .5rem 1rem;
+    font-size: 0.875rem; }
+    .contract_address p span {
+      color: #ffffff;
+      padding: 1rem; }

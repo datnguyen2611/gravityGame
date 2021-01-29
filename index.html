@@ -115,27 +115,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="bet_address">
+                            <!-- <div class="bet_address">
                                 <h2>
                                     BET Address:
                                 </h2>
                                 <p> qqrf2vkc7w5vn72geqyjn786chdhglea8smf7ef3zu</p>
-                            </div>
-                            <div class="input_submit d-flex ">
+                            </div> -->
+                            <div class="input_submit  ">
                                 <div class="number_input">
-                                    <input type="text" class="number" placeholder="0.010000 BCH">
+                                    <input class="bet_value" type="text" placeholder=" 0.01 ETH">
                                 </div>
                                
                                 <a href=""> <div class="submit"><img src="./src/assets/images/submit_button.svg" alt="" class="img-fluid"></div></a>
                             </div>
-                            <div class="qr_code d-flex">
+                            <div class="bet_address">
+                                <h2>
+                                    Account:
+                                </h2>
+                            </div>
+                            <div id="wallet">
+                                <p style="color: white; font-size: 14px; overflow: hidden; font-family: 'rokkitt';"><span style="color: #d9aeae">ADDRESS</span>: <span style="font-size: 12px;">0x107f3eBA79E89C78C346883482e074aceE227bFa</span></p>
+                                <p style="color: white; font-size: 14px; font-family: 'rokkitt';"><span style="color: #d9aeae">BALANCE</span>: 0.0000 ETH</p>
+                                </div>
+                            <!-- <div class="qr_code d-flex">
                                 <div class="qr_icon"><img src="./src/assets/images/icon/icon_qr.svg" alt=""
                                         class="img-fluid"></div>
                                 <div class="qr_title">
                                     <p>QR code</p>
                                 </div>
-                            </div>
-                            <div class="text_address_and_balance d-flex">
+                            </div> -->
+                            <!-- <div class="text_address_and_balance d-flex">
                                     <div class="your_adress">
                                         <p>Your Address:</p>
                                         <p> qqrf2vkc...mf7ef3zu</p>
@@ -144,13 +153,13 @@
                                         <p>Your Address:</p>
                                         <p> qqrf2vkc...mf7ef3zu</p>
                                     </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="main-right">
                             <div class="list_main">
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <ul class="nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
                                             href="#pills-home" role="tab" aria-controls="pills-home"
@@ -185,7 +194,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th scope="col" class="col-text-1">Transaction ID</th>
-                                                        <th scope="col" class="col-text-1">Payout TXID</th>
+                                                        <!-- <th scope="col" class="col-text-1">Payout TXID</th> -->
                                                         <th scope="col" class="col-number">Bet</th>
                                                         <th scope="col" class="col-number">Roll</th>
                                                         <th scope="col" class="col-number">Result</th>
@@ -195,11 +204,11 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                   
+
                                                     <tr class="collap_toggle">
                                                         <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
                                                         <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
+                                                            <!-- <td data-label="Payout TXID">ed23b76815414...</td> -->
                                                         <td data-label="Bet">32768</td>
                                                         <td data-label="Roll">4059</td>
                                                         <td data-label="Result" class="result">
@@ -212,261 +221,8 @@
                                                         <td data-label="Bet Amount">0.010000 BCH</td>
                                                         <td data-label="Payout">0.019230 BCH</td>
                                                         </div>
-                                                       
                                                     </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
+                                                    <!-- item table -->
                                                     
                                                 </tbody>
                                                
@@ -483,7 +239,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th scope="col" class="col-text-1">Transaction ID</th>
-                                                        <th scope="col" class="col-text-1">Payout TXID</th>
+                                                        <!-- <th scope="col" class="col-text-1">Payout TXID</th> -->
                                                         <th scope="col" class="col-number">Bet</th>
                                                         <th scope="col" class="col-number">Roll</th>
                                                         <th scope="col" class="col-number">Result</th>
@@ -494,263 +250,11 @@
                                                 </thead>
                                                 <tbody>
                                                    
+                                                   
                                                     <tr class="collap_toggle">
                                                         <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
                                                         <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
+                                                            <!-- <td data-label="Payout TXID">ed23b76815414...</td> -->
                                                         <td data-label="Bet">32768</td>
                                                         <td data-label="Roll">4059</td>
                                                         <td data-label="Result" class="result">
@@ -781,7 +285,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th scope="col" class="col-text-1">Transaction ID</th>
-                                                        <th scope="col" class="col-text-1">Payout TXID</th>
+                                                        <!-- <th scope="col" class="col-text-1">Payout TXID</th> -->
                                                         <th scope="col" class="col-number">Bet</th>
                                                         <th scope="col" class="col-number">Roll</th>
                                                         <th scope="col" class="col-number">Result</th>
@@ -791,264 +295,10 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                   
                                                     <tr class="collap_toggle">
                                                         <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
                                                         <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
-                                                        <td data-label="Bet">32768</td>
-                                                        <td data-label="Roll">4059</td>
-                                                        <td data-label="Result" class="result">
-                                                            <div class="item_result d-flex">
-                                                                <img src="./src/assets/images/icon/win_icon.png" alt=""
-                                                                    class="img-fluid image_status image_win">
-                                                                <p class="text_status win">win</p>
-                                                            </div>
-                                                        </td>
-                                                        <td data-label="Bet Amount">0.010000 BCH</td>
-                                                        <td data-label="Payout">0.019230 BCH</td>
-                                                        </div>
-                                                       
-                                                    </tr>
-                                                    <tr class="collap_toggle">
-                                                        <td data-label="Transaction ID">c2c03c104520... <img src="./src/assets/images/icon/down_icon.svg" alt="" class="img-fluid icon_click"></td>
-                                                        <div class="toggle_td">
-                                                            <td data-label="Payout TXID">ed23b76815414...</td>
+                                                            <!-- <td data-label="Payout TXID">ed23b76815414...</td> -->
                                                         <td data-label="Bet">32768</td>
                                                         <td data-label="Roll">4059</td>
                                                         <td data-label="Result" class="result">
@@ -1072,6 +322,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="contract_address d-flex">
+                            <p>CONTRACT ADDRESS: <span>0xaef79496a1BfdC21D92b0248516d64DBFd787773</span></p>
                         </div>
                     </div>
                 </div>

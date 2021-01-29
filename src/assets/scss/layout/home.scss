@@ -66,6 +66,7 @@ body {
       // box-shadow: inset 0px 0px 15px #000000;
 
       .item {
+        text-align: center;
         button{
           background-color: transparent;
           border: none;
@@ -186,20 +187,17 @@ body {
     ul {
       width: 100%;
       justify-content: space-evenly;
-
+      @include ipad-mini{
+        justify-content: space-between;
+      }
       .nav-item {
         width: px(180);
         height: px(40);
 
         @include ipad {
-          width: px(120);
+          width: px(104);
         }
 
-        &:last-child {
-          @include ipad {
-            display: none;
-          }
-        }
 
         .nav-link {
           text-align: center;
@@ -216,7 +214,8 @@ body {
           font-size: px(18);
 
           @include ipad {
-            width: px(136);
+            width: px(104);
+           padding :.5rem 0;
           }
 
           //  @include screen-500{
@@ -225,7 +224,8 @@ body {
 
           p {
             @include ipad {
-              font-size: px(14) !important;
+              font-size: px(12) !important;
+              margin-top: .3rem;
             }
           }
         }
@@ -247,6 +247,7 @@ body {
             top: 0;
             z-index: 0;
             @include ipad {
+              display: none;
               height: 78%;
             }
           }
@@ -520,20 +521,15 @@ body {
   margin: auto;
 .number_input{
   margin: auto;
-  input{
-  background-color: transparent;
-  color: #ffffff;
-  border-image: linear-gradient(to bottom, #7A7369 0%,#EAC48B 50% , #7A6969 100%) 1 stretch;
-  padding-left: .5rem;
-  &:focus{
-    outline: none;
-    // border: none;
-  }
-
-  @include ipad{
-    width: 80%;
-    text-align: center;
-  }
+  .bet_value{
+    background: #e9ecef17;
+      border: solid 3px #80808059;
+      border-radius: 5px;
+      color: #9ba4ad;
+      padding-left: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+     
   }
 }
   .submit{
@@ -551,14 +547,11 @@ body {
     // -moz-box-shadow: 3px 14px 98px -1px rgba(192, 150, 69, 0.73);
     // }
     img{
-      width: 80%;
+      width: 50%;
       margin: auto;
       padding-top: .5rem;
       position: relative;
       z-index: 1;
-      @include ipad{
-        width: 100%;
-      }
       
     }a{
       width: 100%;
@@ -587,4 +580,20 @@ body {
       }
     }
   }
+}
+.contract_address{
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+ 
+  p{
+    @extend .rokkitt;
+    color: #d9aeae;
+    padding: .5rem 1rem;
+    font-size: px(14);
+    span{
+      color: #ffffff;
+      padding: 1rem;
+    }
+  }
+  
 }

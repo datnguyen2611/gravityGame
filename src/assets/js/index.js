@@ -1,14 +1,14 @@
 $(document).ready(function () {
-   
+  
     if (window.matchMedia('(max-width: 769px)').matches) {
         var flag = false;
         $(".collap_toggle").click(function () {
-            console.log('a')
             $(this).toggleClass('activeCollap');
             $(this).each(function () {
                 if ($(this).hasClass('activeCollap')) {
                     // $(this).children().slideDown('slow', function () {
                         $(this).children().css("display", "block");
+                        
                     // });
                     $(this).find(".icon_click").attr("src", "./src/assets/images/icon/up_icon.svg");
                         flag = true;
@@ -18,7 +18,6 @@ $(document).ready(function () {
                     });
                     $(this).find(".icon_click").attr("src", "./src/assets/images/icon/down_icon.svg");
                     flag = false;
-                    console.log("true");
                 }
                 // toggle table js in 767px
             });
@@ -41,7 +40,7 @@ $(document).ready(function () {
     });
    
 
-    if($(' tbody').height() > 400){
+    if($('tbody').height() > 400){
         $('tbody').css({'overflow-y':'scroll','height':'fit-content','max-height':'25rem'});
     }else{
         $('tbody').css({'overflow-y':'none','height':'fit-content'}); 
