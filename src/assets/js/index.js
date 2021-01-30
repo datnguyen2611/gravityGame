@@ -53,5 +53,54 @@ $(document).ready(function () {
     $('.popup_status').click(function(){
         $(this).fadeOut('slow');
     });
+    function incrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div'); 
+        var plusChange = $(e.target).data('value-change'); // chang val plus change
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+       
+        if (!isNaN(currentVal)) {   
+          parent.find('input[name=' + fieldName + ']').val(currentVal + plusChange);
+        } else {
+          parent.find('input[name=' + fieldName + ']').val(0);
+        }
+      }
+      
+      function decrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+        var plusChange = $(e.target).data('value-change');  // chang val plus change
+        if (!isNaN(currentVal) && currentVal > 0) {
+          parent.find('input[name=' + fieldName + ']').val(currentVal - plusChange);
+        } else {
+          parent.find('input[name=' + fieldName + ']').val(0);
+        }
+      }
+      
+      $('.input-group').on('click', '.button-plus', function(e) {
+        incrementValue(e);
+      });
+      
+      $('.input-group').on('click', '.button-minus', function(e) {
+        decrementValue(e);
+      });
 
+    //   plus input 
+
+
+      $('.item_input').click(function(){
+          $('.item_input').removeClass('active_input');
+          $('.item_input').find('.img_item_input').attr('src','./src/assets/images/background/bg_small.svg');
+        $(this).addClass('active_input');
+      
+        if( $(this).hasClass('active_input')){
+            $(this).find('.img_item_input').attr('src','./src/assets/images/background/bg_small_active.svg');
+            $('.img_item_input').removeClass('active_input');
+           
+        }
+      })
+    // click percent input
 });

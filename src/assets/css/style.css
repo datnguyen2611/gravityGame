@@ -396,7 +396,8 @@ img {
 a {
   text-decoration: none; }
 
-.mesi-bold, .wrapper .main .bet_number_table .item .number, .wrapper .main .bet_address h2, .wrapper .main-right ul .nav-item .nav-link, .wrapper .main-right ul .nav-item .nav-link.active p, .online_status, .text_address_and_balance .your_adress p, .text_address_and_balance .balance p {
+.mesi-bold, .wrapper .main .bet_number_table .item .number, .wrapper .main .bet_address h2, .wrapper .main-right ul .nav-item .nav-link, .wrapper .main-right ul .nav-item .nav-link.active p, .online_status, .text_address_and_balance .your_adress p,
+.text_address_and_balance .balance p, .percent_input .item_input .text {
   font-family: 'mesi-bold'; }
 
 .mesi, .wrapper .main .bet_address p, .wrapper .main .qr_code .qr_title {
@@ -581,11 +582,11 @@ body {
         @media (max-width: 769px) {
           .wrapper .main-right ul .nav-item .nav-link {
             width: 6.5rem;
-            padding: .5rem 0; } }
+            padding: 0.5rem 0; } }
         @media (max-width: 769px) {
           .wrapper .main-right ul .nav-item .nav-link p {
             font-size: 0.75rem !important;
-            margin-top: .3rem; } }
+            margin-top: 0.3rem; } }
       .wrapper .main-right ul .nav-item .nav-link.active {
         position: relative;
         background-color: transparent; }
@@ -665,7 +666,7 @@ body {
         position: relative; }
         @media (max-width: 769px) {
           .wrapper .main-right .list_main_content .item table tbody {
-            padding-right: .5rem; } }
+            padding-right: 0.5rem; } }
         .wrapper .main-right .list_main_content .item table tbody::-webkit-scrollbar {
           width: 10px;
           height: 10px; }
@@ -752,11 +753,11 @@ body {
     font-size: 1.125rem;
     padding-right: 4.4375rem; }
     .online_status .online-text span {
-      color: #FFD37E; }
+      color: #ffd37e; }
   .online_status .total_bet_text {
     font-size: 1.125rem; }
     .online_status .total_bet_text span {
-      color: #FFD37E; }
+      color: #ffd37e; }
   @media (max-width: 769px) {
     .online_status {
       margin: 1rem 0;
@@ -766,18 +767,30 @@ body {
   margin: auto; }
   .input_submit .number_input {
     margin: auto; }
-    .input_submit .number_input .bet_value {
-      background: #e9ecef17;
-      border: solid 3px #80808059;
-      border-radius: 5px;
-      color: #9ba4ad;
-      padding-left: 5px;
-      width: 100%;
-      margin-bottom: 10px; }
+    .input_submit .number_input .input-group {
+      justify-content: center; }
+      .input_submit .number_input .input-group .bet_value {
+        background: #e9ecef17;
+        border: solid 3px #80808059;
+        border-radius: 5px;
+        color: #9ba4ad;
+        padding-left: 5px; }
+        .input_submit .number_input .input-group .bet_value::-webkit-outer-spin-button, .input_submit .number_input .input-group .bet_value::-webkit-inner-spin-button {
+          -webkit-appearance: none; }
+        .input_submit .number_input .input-group .bet_value[type="number"] {
+          -moz-appearance: textfield;
+          -webkit-appearance: none; }
+      .input_submit .number_input .input-group .button-minus, .input_submit .number_input .input-group .button-plus {
+        background-color: transparent;
+        border-radius: 10px;
+        border: none; }
+        .input_submit .number_input .input-group .button-minus:focus, .input_submit .number_input .input-group .button-plus:focus {
+          outline: none;
+          border: none; }
   .input_submit .submit img {
     width: 50%;
     margin: auto;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     position: relative;
     z-index: 1; }
   .input_submit .submit a {
@@ -790,21 +803,45 @@ body {
 .text_address_and_balance {
   padding-top: 1.0625rem;
   justify-content: space-around; }
-  .text_address_and_balance .your_adress p, .text_address_and_balance .balance p {
+  .text_address_and_balance .your_adress p,
+  .text_address_and_balance .balance p {
     font-size: 0.8125rem; }
-    .text_address_and_balance .your_adress p:first-child, .text_address_and_balance .balance p:first-child {
-      color: #FFD37E;
+    .text_address_and_balance .your_adress p:first-child,
+    .text_address_and_balance .balance p:first-child {
+      color: #ffd37e;
       margin-bottom: 0.625rem; }
-    .text_address_and_balance .your_adress p:nth-child(2), .text_address_and_balance .balance p:nth-child(2) {
-      color: #EFBEBE; }
+    .text_address_and_balance .your_adress p:nth-child(2),
+    .text_address_and_balance .balance p:nth-child(2) {
+      color: #efbebe; }
 
 .contract_address {
   margin-top: 1rem;
   background-color: rgba(0, 0, 0, 0.5); }
   .contract_address p {
     color: #d9aeae;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 0.875rem; }
     .contract_address p span {
       color: #ffffff;
       padding: 1rem; }
+
+.percent_input {
+  text-align: center;
+  margin-bottom: 0.4375rem; }
+  .percent_input .item_input {
+    margin-right: .3rem;
+    background-color: transparent;
+    border: none;
+    position: relative; }
+    .percent_input .item_input:focus {
+      outline: none; }
+    .percent_input .item_input .img_item_input {
+      margin: auto;
+      position: relative; }
+    .percent_input .item_input .text {
+      position: absolute;
+      top: 55%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      font-size: 0.75rem;
+      color: #FFD37E; }
